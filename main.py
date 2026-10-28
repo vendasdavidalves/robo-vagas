@@ -29,7 +29,7 @@ def buscar_e_enviar_vagas():
             "📌 *Dica do Robô:* Acesse os links acima para ver as postagens mais recentes!"
         )
         
-        url_telegram = f"https://telegram.org{TOKEN_TELEGRAM}/sendMessage"
+        url_telegram = f"https://telegram.org/bot{TOKEN_TELEGRAM}/sendMessage"
         dados = {
             "chat_id": ID_TELEGRAM,
             "text": mensagem,
